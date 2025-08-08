@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position:  relative !important;
+    z-index: 1;
 }
 #benner h1{
     font-size: 75px;
@@ -16,7 +17,7 @@
     height: 100%;
     background-color: rgba(13, 0, 0, 0.355);
     position: absolute !important;
-    z-index: 0;
+    z-index: -1;
 }
 
 #skincare_top{
@@ -40,4 +41,74 @@
   #skincare_top::-webkit-scrollbar-thumb {
     background: rgb(160, 2, 75);
     border-radius: 10px;
+  }
+  .list-sidbar{
+    transition: .5s ease-in-out;
+  }
+  .list-sidbar:hover{
+    transition: .5s ease-in-out;
+    background-color: rgba(163, 230, 213, 0.547);
+  }
+   #link_nav>a{
+    position: relative;
+    display: inline;
+  }
+  #link_nav > a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: yellow;
+    bottom: -5px;
+    left: 0;
+    transition: .5s ease-in-out;
+  }
+  #link_nav > a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    bottom: -5px;
+    right: 0;
+    transition: .5s ease-in-out;
+  }
+   #link_nav > a:hover::before,
+   #link_nav > a:hover::after{
+    width: 50%;
+    transition: .5s ease-in-out
+   }
+
+  @media (max-width:576px){
+    #benner{
+      height: auto;
+    }
+    #benner h1{
+      font-size: 55px;
+    }
+    .offcanvas{
+      width: 75% !important;
+    }
+  }
+  @media (min-width:568px){
+    #benner{
+      height: 590px;
+    }
+    #benner h1{
+      font-size: 65px;
+    }
+     .offcanvas{
+      width: 50% !important;
+    }
+  }
+  @media (min-width:992px){
+    #benner{
+          height: 590px;
+    }
+    #benner h1{
+          font-size: 75px;
+    }
+    #product_diss{
+      height: 350px;
+    }
   }

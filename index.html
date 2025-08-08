@@ -50,11 +50,11 @@
                 </button>
                 <!-- menu -->
                 <div class="col-7 collapse navbar-collapse justify-content-center align-items-center">
-                    <ul class="navbar-nav gap-4  ">
-                        <li><a class="nav-link fw-bold text-light fs-5" href="">Hair Cream</a></li>
-                        <li><a class="nav-link fw-bold text-light fs-5" href="">Face Primer</a></li>
-                        <li><a class="nav-link fw-bold text-light fs-5" href="">Makeup Brushes</a></li>
-                        <li><a class="nav-link fw-bold text-light fs-5" href="">Skincare Cream</a></li>
+                    <ul id="menu" class="navbar-nav gap-4  ">
+                        <li id="link_nav"><a class="nav-link fw-bold text-light fs-5" href="">Hair Cream</a></li>
+                        <li id="link_nav"><a class="nav-link fw-bold text-light fs-5" href="">Face Primer</a></li>
+                        <li id="link_nav"><a class="nav-link fw-bold text-light fs-5" href="">Makeup Brushes</a></li>
+                        <li id="link_nav"><a class="nav-link fw-bold text-light fs-5" href="">Skincare Cream</a></li>
                     </ul>
                 </div>
                 <!-- icon search -->
@@ -73,7 +73,7 @@
 
         <!-- offcanvas -->
         <div>
-                  <div class="offcanvas w-75 offcanvas-start" data-bs-scroll="true"
+                  <div class="offcanvas  offcanvas-start" data-bs-scroll="true"
                    data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" 
                    aria-labelledby="offcanvasScrollingLabel" style="background-color: rgb(160, 2, 75);" >
                       <!-- header sidbar -->
@@ -85,10 +85,10 @@
                       <div class="offcanvas-body p-0">
                         <!-- menu top -->
                           <ul class="navbar-nav">
-                                <li class="p-3"><a class="nav-link fw-bold text-light fs-5" href="">Hair Cream</a></li>
-                                <li class="p-3"><a class="nav-link fw-bold text-light fs-5" href="">Face Primer</a></li>
-                                <li class="p-3"><a class="nav-link fw-bold text-light fs-5" href="">Makeup Brushes</a></li>
-                                <li class="p-3"><a class="nav-link fw-bold text-light fs-5" href="">Skincare Cream</a></li>
+                                <li class="list-sidbar p-3"><a class="nav-link fw-bold text-light fs-5" href="">Hair Cream</a></li>
+                                <li class="list-sidbar p-3"><a class="nav-link fw-bold text-light fs-5" href="">Face Primer</a></li>
+                                <li class="list-sidbar p-3"><a class="nav-link fw-bold text-light fs-5" href="">Makeup Brushes</a></li>
+                                <li class="list-sidbar p-3"><a class="nav-link fw-bold text-light fs-5" href="">Skincare Cream</a></li>
                             </ul>
                         <!-- icon search -->
                             <div class="col-12 row d-flex align-items-center p-3 px-4 mt-4 ">
@@ -111,31 +111,31 @@
     <!-- main-content -->
      <main class="container-fluid p-0">
         <!-- benner -->
-         <section id="benner" class="w-100">
+        <section id="benner" class="w-100">
                 <!-- opacity -->
                 <div id="opacity"></div>
                 <div class="row container m-auto h-100">
                         <!-- detail -->
-                         <div class="col-6 d-flex gap-3 flex-column justify-content-center h-100">
+                         <div class="col-12 py-5 col-md-6 d-flex gap-3 flex-column justify-content-center h-100">
                                 <p id="paragrah" class="fs-4 text-light fw-bold animate__animated animate__zoomInDown m-0">Sale Up To 50%</p>
                                 <h1 class="m-0 text-light fw-bold animate__animated animate__zoomInDown">Aloe Vera Natural Comestics</h1>
-                                <button class="text-light animate__animated animate__zoomInRight w-25 mt-3 btn btn-danger rounded-4 py-2">Shop Now</button>
+                                <button class="text-light fs-5 animate__animated animate__zoomInRight w-50  mt-3 btn btn-danger rounded-4  py-md-3 py-2">Shop Now</button>
                          </div>
                          <!-- image -->
-                          <div class="col-6 h-100">
-                                <img class="w-100 h-100" src="./assets/image/image_benner.png" alt="">
+                          <div class="col-12 col-md-6 h-100">
+                                <img class="w-100 h-100" style="object-fit: cover;" src="./assets/image/image_benner.png" alt="">
                           </div>
                 </div>
-         </section>
+        </section>
 
          <!-- top_skincare -->
-          <section class="container-fluid p-0 py-5">
+        <section class="container-fluid pt-5 py-md-5">
                 <div class="container  p-0">
-                        <h1 class="mb-5 fw-bold">TOP SKINCARE</h1>
+                        <h1 class="mb-5 text-center text-lg-start fw-bold">TOP SKINCARE</h1>
                         <!-- skincare top -->
                         <div id="skincare_top" class="w-100 h-100">
 
-                            <div class="p-2 px-4 h-100" style="width: 300px;">
+                            <div class="p-2 px-4 h-100" style="width: 290px;">
                                 <div class="w-100 h-75 rounded-circle" style="background-color: rgba(218, 218, 218, 0.481);">
                                 <img class="w-100 h-100 p-5" src="./assets/image/Hair Cream.png" alt="">
                                 </div>
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-2 px-4 h-100" style="width: 300px;">
+                            <div class="p-2 px-4 h-100" style="width: 290px;">
                                 <div class="w-100 h-75 rounded-circle" style="background-color: rgba(218, 218, 218, 0.481);">
                                 <img class="w-100 h-100 p-5" src="./assets/image/Makeup Brushes.png" alt="">
                                 </div>
@@ -153,7 +153,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-2 px-4 h-100" style="width: 300px;">
+                            <div class="p-2 px-4 h-100" style="width: 290px;">
                                 <div class="w-100 h-75 rounded-circle" style="background-color: rgba(218, 218, 218, 0.481);">
                                 <img class="w-100 h-100 p-5" src="./assets/image/Perfumes.png" alt="">
                                 </div>
@@ -162,7 +162,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-2 px-4 h-100" style="width: 300px;">
+                            <div class="p-2 px-4 h-100" style="width: 290px;">
                                 <div class="w-100 h-75 rounded-circle" style="background-color: rgba(218, 218, 218, 0.481);">
                                 <img class="w-100 h-100 p-5" src="./assets/image/Skincare Cream.png" alt="">
                                 </div>
@@ -171,7 +171,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-2 px-4 h-100" style="width: 300px;">
+                            <div class="p-2 px-4 h-100" style="width: 290px;">
                                 <div class="w-100 h-75 rounded-circle" style="background-color: rgba(218, 218, 218, 0.481);">
                                 <img class="w-100 h-100 p-5" src="./assets/image/Makeup Lipstick.png" alt="">
                                 </div>
@@ -180,7 +180,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-2 px-4 h-100" style="width: 300px;">
+                            <div class="p-2 px-4 h-100" style="width: 290px;">
                                 <div class="w-100 h-75 rounded-circle" style="background-color: rgba(218, 218, 218, 0.481);">
                                 <img class="w-100 h-100 p-5" src="./assets/image/Face Cream.webp" alt="">
                                 </div>
@@ -192,172 +192,434 @@
 
                         <!-- skincare buttom -->
                 </div>
-          </section>
+        </section>
 
-          <!-- Product Disscount -->
-           <section class="container-fluid p-0 py-5">
+        <!-- Product Disscount -->
+        <section class="container-fluid pb-5 py-md-5">
                 <div class="container p-0">
-                        <div class="row" style="height: 350px ;">
+                        <div class="row  d-flex justify-content-center  p-0 m-0" id="product_diss" >
                                 <!-- left -->
-                                <div class="col-6 h-100 " >
-                                        <div class="w-100 h-100 d-flex rounded-3 shadow-sm px-2" style="background-color:rgb(255, 240, 216);">
+                                <div class="col-12 col-md-6 ps-md-4 pe-md-0 py-md-0 pb-md-1   ps-5 p-3 h-100 p-lg-3 ps-lg-5" >
+                                        <div class="w-100 h-100 row rounded-3 shadow-lg px-2" style="background-color:rgb(255, 240, 216);">
                                                 <!-- detail -->
-                                                <div class="col-6 p-4 d-flex gap-3 flex-column justify-content-center h-100">
+                                                <div class="col-12 col-lg-6 p-3 p-md-4 d-flex gap-3 flex-column justify-content-center h-100">
                                                         <p class="fs-4 text-dark fw-bold animate__animated animate__zoomInDown m-0">25% Disscount</p>
                                                         <h1 class="m-0 text-dark fw-bold animate__animated animate__zoomInDown">Cosmetic Skin Perfectly</h1>
                                                         <button class="text-light animate__animated animate__zoomInRight w-50 mt-3 btn btn-danger rounded-4 py-2">Shop Now</button>
                                                 </div>
                                                 <!-- image -->
-                                                <div class="col-6 h-100 py-3">
-                                                        <img class="w-100 h-100" src="./assets/image/image_benner.png" alt="">
+                                                <div class="col-12 col-lg-6 h-100 py-3  px-md-2 ">
+                                                        <img class="w-100 h-100 rounded-4" src="./assets/image/Cosmetic Skin Perfectly-1.jpg" alt="">
                                                 </div>
                                         </div>
                                 </div>
                                 <!-- right -->
-                                 <div class="col-6 h-100 " >
-                                        <div class="w-100 h-100 d-flex rounded-3 shadow-sm px-2" style="background-color:rgb(255, 240, 216);">
+                                 <div class="col-12 col-md-6 ps-md-3  pe-md-0 py-md-0 ps-5 p-3 h-100 p-lg-3 ps-lg-4" >
+                                        <div class="w-100 h-100 row rounded-3 shadow-lg px-2" style="background-color:rgb(255, 240, 216);">
                                                 <!-- detail -->
-                                                <div class="col-6 p-4 d-flex gap-3 flex-column justify-content-center h-100">
+                                                <div class="col-12 col-lg-6 p-3 p-md-4 d-flex gap-3 flex-column justify-content-center h-100">
                                                         <p class="fs-4 text-dark fw-bold animate__animated animate__zoomInDown m-0">25% Disscount</p>
                                                         <h1 class="m-0 text-dark fw-bold animate__animated animate__zoomInDown">Cosmetic Skin Perfectly</h1>
                                                         <button class="text-light animate__animated animate__zoomInRight w-50 mt-3 btn btn-danger rounded-4 py-2">Shop Now</button>
                                                 </div>
                                                 <!-- image -->
-                                                <div class="col-6 h-100 py-3">
-                                                        <img class="w-100 h-100" src="./assets/image/image_benner.png" alt="">
+                                                <div class="col-12 col-lg-6 h-100 py-3 px-2 pb-md-2 p-0" >
+                                                        <img class="w-100 h-100 rounded-4 pb-lg-2" src="./assets/image/Cosmetic Skin Perfectly-2.jpg" alt="">
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                 </div>
-           </section>
+        </section>
 
-           <!-- Product Menu -->
-           <section class="container-fluid p-0 ">
-                <div class="container p-0 py-3">
-                        <!-- title -->
-                        <h1 class="text-center text-uppercase">Trending Product</h1>
-                        <!-- button menu -->
-                        <div class="w-100 mt-5 d-flex justify-content-center gap-5">
-                            <button class="btn px-5 fs-5 btn-danger rounded-5">New Arrivals</button>
-                            <button class="btn px-5 fs-5 btn-outline-danger rounded-5 ">BestSeller</button>
-                            <button class="btn px-5 fs-5 btn-outline-danger rounded-5 ">Special</button>
+        <!-- Product Menu -->
+        <section class="container-fluid p-0">
+                    <!-- Tab Content -->
+                        <div class="container p-0 py-3">
+                            <!-- title -->
+                            <h1 class="text-center text-uppercase">Trending Product</h1>
+
+                            <!-- nav-tabs -->
+                            <ul class="nav nav-tabs justify-content-center gap-3 mt-5" id="productTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class=" btn active px-5 fs-5 btn-outline-danger rounded-5" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button" role="tab">New Arrivals</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class=" btn px-5 fs-5 btn-outline-danger rounded-5" id="bestseller-tab" data-bs-toggle="tab" data-bs-target="#bestseller" type="button" role="tab">BestSeller</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class=" btn px-5 fs-5 btn-outline-danger rounded-5" id="special-tab" data-bs-toggle="tab" data-bs-target="#special" type="button" role="tab">Special</button>
+                                </li>
+                            </ul>
+
+                            <!-- tab content -->
+                            <div class="tab-content py-5" id="productTabContent">
+
+                                <!-- New Arrivals -->
+                                <div class="tab-pane fade show active" id="new" role="tabpanel">
+                                    <div class="row w-100 m-auto px-3 px-md-0">  
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">New Arrival Product</h3>
+                                                <p class="m-0">$55.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">New Arrival Product</h3>
+                                                <p class="m-0">$55.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">New Arrival Product</h3>
+                                                <p class="m-0">$55.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">New Arrival Product</h3>
+                                                <p class="m-0">$55.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">New Arrival Product</h3>
+                                                <p class="m-0">$55.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">New Arrival Product</h3>
+                                                <p class="m-0">$55.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">New Arrival Product</h3>
+                                                <p class="m-0">$55.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">New Arrival Product</h3>
+                                                <p class="m-0">$55.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- BestSeller -->
+                                <div class="tab-pane fade" id="bestseller" role="tabpanel">
+                                    <div class="row w-100 m-auto px-3 px-md-0">
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Makeup Brushes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">BestSeller Product</h3>
+                                                <p class="m-0">$65.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Makeup Brushes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">BestSeller Product</h3>
+                                                <p class="m-0">$65.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Makeup Brushes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">BestSeller Product</h3>
+                                                <p class="m-0">$65.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Makeup Brushes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">BestSeller Product</h3>
+                                                <p class="m-0">$65.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Makeup Brushes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">BestSeller Product</h3>
+                                                <p class="m-0">$65.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Makeup Brushes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">BestSeller Product</h3>
+                                                <p class="m-0">$65.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Makeup Brushes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">BestSeller Product</h3>
+                                                <p class="m-0">$65.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Makeup Brushes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">BestSeller Product</h3>
+                                                <p class="m-0">$65.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Special -->
+                                <div class="tab-pane fade" id="special" role="tabpanel">
+                                    <div class="row w-100 m-auto px-3 px-md-0">
+                                    <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Perfumes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">Special Product</h3>
+                                                <p class="m-0">$75.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Perfumes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">Special Product</h3>
+                                                <p class="m-0">$75.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Perfumes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">Special Product</h3>
+                                                <p class="m-0">$75.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Perfumes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">Special Product</h3>
+                                                <p class="m-0">$75.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Perfumes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">Special Product</h3>
+                                                <p class="m-0">$75.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Perfumes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">Special Product</h3>
+                                                <p class="m-0">$75.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Perfumes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">Special Product</h3>
+                                                <p class="m-0">$75.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    <!-- card -->
+                                        <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
+                                            <div class="card">
+                                            <img class="w-100 h-100 card-img-top" src="./assets/image/Perfumes.png" alt="">
+                                            <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
+                                                <p class="m-0">⭐⭐⭐⭐⭐</p>
+                                                <h3 class="m-0 fs-4">Special Product</h3>
+                                                <p class="m-0">$75.99</p>
+                                                <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-
-                        <!-- main-card -->
-                         <div class="row w-100 m-auto py-5">
-                                <!-- card -->
-                                <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in" >
-                                    <!--  -->
-                                    <div class="card">
-                                        <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
-                                        <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
-                                            <p class="m-0">⭐⭐⭐⭐⭐</p>
-                                            <h3 class="m-0 fs-4">Lorem, ipsum dolor.</h3>
-                                            <p class="m-0">$55.99</p>
-                                            <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
-                                    <!--  -->
-                                    <div class="card">
-                                        <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
-                                        <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
-                                            <p class="m-0">⭐⭐⭐⭐⭐</p>
-                                            <h3 class="m-0 fs-4">Lorem, ipsum dolor.</h3>
-                                            <p class="m-0">$55.99</p>
-                                            <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
-                                    <!--  -->
-                                    <div class="card">
-                                        <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
-                                        <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
-                                            <p class="m-0">⭐⭐⭐⭐⭐</p>
-                                            <h3 class="m-0 fs-4">Lorem, ipsum dolor.</h3>
-                                            <p class="m-0">$55.99</p>
-                                            <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
-                                    <!--  -->
-                                    <div class="card">
-                                        <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
-                                        <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
-                                            <p class="m-0">⭐⭐⭐⭐⭐</p>
-                                            <h3 class="m-0 fs-4">Lorem, ipsum dolor.</h3>
-                                            <p class="m-0">$55.99</p>
-                                            <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
-                                    <!--  -->
-                                    <div class="card">
-                                        <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
-                                        <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
-                                            <p class="m-0">⭐⭐⭐⭐⭐</p>
-                                            <h3 class="m-0 fs-4">Lorem, ipsum dolor.</h3>
-                                            <p class="m-0">$55.99</p>
-                                            <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
-                                    <!--  -->
-                                    <div class="card">
-                                        <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
-                                        <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
-                                            <p class="m-0">⭐⭐⭐⭐⭐</p>
-                                            <h3 class="m-0 fs-4">Lorem, ipsum dolor.</h3>
-                                            <p class="m-0">$55.99</p>
-                                            <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
-                                    <!--  -->
-                                    <div class="card">
-                                        <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
-                                        <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
-                                            <p class="m-0">⭐⭐⭐⭐⭐</p>
-                                            <h3 class="m-0 fs-4">Lorem, ipsum dolor.</h3>
-                                            <p class="m-0">$55.99</p>
-                                            <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div class="col-12 col-md-6 mt-4 col-lg-3" data-aos="zoom-in">
-                                    <!--  -->
-                                    <div class="card">
-                                        <img class="w-100 h-100 card-img-top" src="./assets/image/Face Cream.webp" alt="">
-                                        <div class="card-body d-flex border-top flex-column gap-2 align-items-center">
-                                            <p class="m-0">⭐⭐⭐⭐⭐</p>
-                                            <h3 class="m-0 fs-4">Lorem, ipsum dolor.</h3>
-                                            <p class="m-0">$55.99</p>
-                                            <button class="btn btn-primary px-3 mt-2">Add To Cart</button>
-                                        </div>
-                                    </div>
-                                </div>
-                         </div>
-                </div>
-           </section>
-
+        </section>
      </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="bg-secondary    text-light pt-5 pb-3 mt-5 border-top" style="background-color: linear-gradient(to right, #007bff, #0056b3);">
+        <div class="container">
+            <div class="row">
+
+            <!-- Logo and description -->
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold">ETEC<span class="text-warning"> CENTER</span></h4>
+                <p>Your daily dose of beauty and skincare products. Trusted by thousands worldwide.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-2 mb-4">
+                <h5 class="fw-semibold">Quick Links</h5>
+                <ul class="list-unstyled">
+                <li class="py-1"><a href="#" class="text-decoration-none text-light">Home</a></li>
+                <li class="py-1"><a href="#" class="text-decoration-none text-light">Shop</a></li>
+                <li class="py-1"><a href="#" class="text-decoration-none text-light">About</a></li>
+                <li class="py-1"><a href="#" class="text-decoration-none text-light">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-semibold">Categories</h5>
+                <ul class="list-unstyled">
+                <li class="py-1"><a href="#" class="text-decoration-none text-light">Cleansers</a></li>
+                <li class="py-1"><a href="#" class="text-decoration-none text-light">Moisturizers</a></li>
+                <li class="py-1"><a href="#" class="text-decoration-none text-light">Serums</a></li>
+                <li class="py-1"><a href="#" class="text-decoration-none text-light">Sunscreens</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-semibold">Contact Us</h5>
+                <p>Email: support@skincarezone.com</p>
+                <p>Phone: +855 123 456 789</p>
+                <div class="d-flex gap-3 mt-2">
+                <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-instagram fs-5"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-twitter-x fs-5"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-youtube fs-5"></i></a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-4 border-top pt-3">
+            <p class="mb-0 fs-5">&copy; 2025 SkincareZone. All rights reserved By <span class="text-warning fw-bold">HOK VANTHIV</span>.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 <script>
   AOS.init();
